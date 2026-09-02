@@ -1,0 +1,13 @@
+# Documentation
+^README.*
+^LICENSE.*
+
+# Git
+^\.git$
+^\.gitignore$
+^\.gitmodules$
+
+# Other non-stowable resources
+^packages$
+^scripts$
+^themes$

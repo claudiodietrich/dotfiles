@@ -1,0 +1,14 @@
+[user]
+	name = "Claudio Dietrich"
+	email = "56760622+claudiodietrich@users.noreply.github.com"
+[init]
+	defaultBranch = trunk
+[core]
+	editor = nvim
+[merge]
+	ff = only
+[pull]
+	rebase = true
+
+[includeIf "gitdir:~/work/"]
+	path = ~/.config/git/config-work

@@ -1,0 +1,57 @@
+format = """
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$line_break\
+$character
+"""
+
+[hostname]
+ssh_only = false
+format = '[$hostname]($style) on '
+style = '#9ece6a'
+
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
+style = '#7aa2f7'
+read_only_style = '#f7768e'
+home_symbol = '~'
+read_only = ' 󰉐'
+truncation_length = 0
+truncate_to_repo = false
+fish_style_pwd_dir_length = 0
+
+[git_branch]
+format = '[$branch]($style)'
+style = '#a9b1d6'
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = '#a9b1d6'
+
+[git_status]
+format = '[[(*$conflicted$untracked$modified$staged$renamed$deleted)]($style) ($ahead_behind$stashed)]($style)'
+style = '#a9b1d6'
+conflicted = '​'
+ahead = '⇡'
+behind = '⇣'
+diverged = '⇡⇣'
+up_to_date = '​'
+untracked = '​'
+stashed = '≡'
+modified = '​'
+staged = '​'
+renamed = '​'
+deleted = '​'
+typechanged = '​'
+
+[character]
+format = '$symbol '
+success_symbol = "[❯](#9ece6a)"
+error_symbol = "[❯](#9ece6a)"
+vimcmd_symbol = "[❯](#7aa2f7)"
+vimcmd_visual_symbol = "[❯](#bb9af7)"
+vimcmd_replace_symbol = "[❯](#f7768e)"
+vimcmd_replace_one_symbol = "[❯](#f7768e)"
