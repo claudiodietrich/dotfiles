@@ -1,1 +1,1 @@
-sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
+sudo ln -sf /usr/bin/distrobox-host-exec /usr/local/bin/podman
